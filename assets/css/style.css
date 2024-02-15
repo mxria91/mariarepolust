@@ -1,5 +1,52 @@
 /* || GENERAL STYLE */
 
+:root {
+    --main-bg-color: #000;
+    --main-bg-font-color: #fff;
+    --main-btn-color: #393333;
+}
+
+*, * :after, * :before {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--main-bg-font-color);
+    /* cursor: none; */
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+html {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8444444vw;
+    overflow: hidden;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: 0;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: none;
+}
+
+ol, ul {
+    list-style: none;
+}
 
 /* || FONT */
 
@@ -15,8 +62,7 @@
 @font-face {
     /* Medium Font */
     font-family: 'Roboto';
-    src: url(../font/Roboto/Roboto-Medium.ttf)
-    format('ttf');
+    src: url(../font/Roboto/Roboto-Medium.ttf) format('ttf');
     font-weight: 400;
     font-style: normal;
     font-display: block;
@@ -32,15 +78,61 @@
 }
 
 
-
-
 /* || HEADER */
 
+.header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.4rem;
+    padding: 0 2rem;
+    padding-top: 0.3rem;
+}
 
+.header-logo-link {
+    letter-spacing: 0.10rem;
+}
+
+h1 {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.header-nav-items li {
+    display: inline-block;
+    padding: 0 1.5rem;
+    margin: 1.3rem;
+}
+
+.header-nav-items li:hover {
+    color: var(--main-btn-color);
+    border-radius: 5rem;
+    background-color: var(--main-bg-font-color);
+}
+
+.header-info {
+    background-color: transparent;
+    color: var(--main-bg-font-color);
+    border: 1px solid var(--main-bg-font-color);
+    border-radius: 5rem;
+    padding: .5rem;
+}
+
+.header-info:hover {
+    border-radius: 5rem;
+    color: var(--main-bg-color);
+    background-color: var(--main-bg-font-color);
+}
 
 /* || MAIN */
 
-
+.home-main-hero {
+    width: auto;
+    height: 500px;
+    margin-bottom:10rem
+}
 
 /* || FOOTER */
 

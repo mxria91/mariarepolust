@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maria Repolust MSR Design">
     <!-- Font Preload -->
-    <link rel="Preload" href="assets/font/Roboto/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="Preload" href="assets/font/Roboto/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="Preload" href="assets/font/Roboto/Roboto-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="assets/font/Roboto/Roboto-Regular.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="assets/font/Roboto/Roboto-Bold.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="assets/font/Roboto/Roboto-Medium.ttf" as="font" type="font/ttf">
      <!-- FAVICON -->
      <link rel="shortcut icon" href="assets/img/love.png" type="image/x-icon">
      <link rel="manifest" href="assets/manifest/manifest.json">
@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- JS -->
     <link rel="stylesheet" href="assets/js/functions.js">
-   
 
-    <title>Maria Repolust - Freelancerin mit Fokus auf Web Design und Programmierung in Salzburg</title>
+    <title>Maria Repolust - Austrian based Web Designer and Developer</title>
 
     <meta name="description" content="Servus! Ich bin Maria - Web Designer und -entwicklerin aus Salzburg. Ich mache Webseiten zu einem außergewöhnlichen Erlebnis.">
     <meta name="robots" content="index, follow">
+
 </head>
 <body>
     <!-- HEADER -->
@@ -28,7 +28,7 @@
         <!-- LOGO -->
         <div class="header-logo">
             <h1>
-                <a href="/#home">MSR DESIGN</a>
+                <a class="header-logo-link" href="/#home">MSR DESIGN</a>
             </h1>
         </div>
         <!-- LINKS -->
@@ -36,7 +36,7 @@
             <ul class="header-nav-items">
                 <li class="header-nav-item">
                     <a class="header-nav-links" href="#/projects">
-                        <span>PROJECTS</span>
+                        <span class="span-inner">PROJECTS</span>
                     </a>
                 </li>
                 <li class="header-nav-item">
@@ -47,8 +47,8 @@
             </ul>
         </nav>
         <!-- AVAILABILITY -->
-        <div class="header-info">
-            <button disabled="disabled" id="header-nav-btn">
+        <div>
+            <button class="header-info">
                 AVAILABLE FOR FREELANCE
             </button>
         </div>
@@ -58,7 +58,7 @@
     <main class="main">
         <div class="home-main">
            
-            <!-- HERO SECTION -->
+            <!-- HERO -->
             <div class="home-main-hero">
                  <!-- HERO PAGINATION -->
                 <div class="home-main-hero-scroll">
@@ -88,7 +88,7 @@
                 </div>
             </div>
 
-            <!-- ABOUT SECTION -->
+            <!-- ABOUT -->
             <div class="home-main-about">
                 <!-- ABOUT HEADER -->
                     <div class="home-main-about-header">
@@ -169,7 +169,7 @@
                 </div>
             </div>
 
-            <!-- PROJECT SECTION -->
+            <!-- PROJECT -->
             <div class="home-main-project">
                 <!-- PROJECT HEADER -->
                 <div class="home-main-project-header">
@@ -239,7 +239,7 @@
                 </div>
             </div>
         
-            <!-- CONTACT SECTION -->
+            <!-- CONTACT -->
             <div class="home-main-contact">
                 <!-- CONTACT PAGINATION -->
                 <div class="home-main-contact-scroll">
@@ -267,7 +267,7 @@
         </div>
     </main>
 
-    <!-- FOOTER SECTION -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="home-footer">
             <div class="home-footer-content">
