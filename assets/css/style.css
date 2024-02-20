@@ -1,9 +1,9 @@
 /* || GENERAL STYLE */
 
 :root {
-    --main-bg-color: #000;
-    --main-bg-font-color: #fff;
-    --main-btn-color: #393333;
+    --main-bg-color: #fbf9f9;
+    --main-bg-font-color: #1a1a1a;
+    --main-btn-color: #d2e4e8;
 }
 
 *, * :after, * :before {
@@ -16,7 +16,7 @@ body {
     color: var(--main-bg-font-color);
     /* cursor: none; */
     text-transform: uppercase;
-    font-family: 'Roboto';
+    font-family: 'Kalnia';
 }
 
 html {
@@ -50,31 +50,16 @@ ol, ul {
 
 /* || FONT */
 
-@font-face {
-    /* Regular Font */
-    font-family: 'Roboto';
-    src: url(../font/Roboto/Roboto-Regular.ttf) format('ttf');
-    font-weight: 300;
-    font-style: normal;
-    font-display: block; 
-}
 
-@font-face {
-    /* Medium Font */
-    font-family: 'Roboto';
-    src: url(../font/Roboto/Roboto-Medium.ttf) format('ttf');
-    font-weight: 400;
-    font-style: normal;
-    font-display: block;
-}
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 700 */
 
-@font-face {
-    /* Bold Font */
-    font-family: 'Roboto';
-    src: url(../font/Roboto/Roboto-Bold.ttf) format('ttf');
-    font-weight: 500;
-    font-style: normal;
-    font-display: block;
+.kalnia-prim-font {
+  font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
 }
 
 
@@ -85,9 +70,10 @@ ol, ul {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    height: 7.4rem;
-    padding: 0 2rem;
+    height: 3.4rem;
+    padding: 0 3rem;
     padding-top: 0.3rem;
+    margin: 1.2rem 0.8rem 0 0.8rem;
 }
 
 .header-logo-link {
@@ -96,7 +82,7 @@ ol, ul {
 
 h1 {
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -126,13 +112,14 @@ h1 {
     background-color: var(--main-bg-font-color);
 }
 
+.header-border {
+    border: 1.5px solid transparent;
+    border-radius: 2rem;
+    backdrop-filter: blur(50px);
+}
+
 /* || MAIN */
 
-.home-main-hero {
-    width: auto;
-    height: 500px;
-    margin-bottom:10rem
-}
 
 /* || FOOTER */
 

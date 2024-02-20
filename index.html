@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maria Repolust MSR Design">
     <!-- Font Preload -->
-    <link rel="stylesheet" href="assets/font/Roboto/Roboto-Regular.ttf" as="font" type="font/ttf">
-    <link rel="stylesheet" href="assets/font/Roboto/Roboto-Bold.ttf" as="font" type="font/ttf">
-    <link rel="stylesheet" href="assets/font/Roboto/Roboto-Medium.ttf" as="font" type="font/ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
      <!-- FAVICON -->
      <link rel="shortcut icon" href="assets/img/love.png" type="image/x-icon">
      <link rel="manifest" href="assets/manifest/manifest.json">
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/node_modules/locomotive-scroll/dist/locomotive-scroll.css">
     <!-- JS -->
     <link rel="stylesheet" href="assets/js/functions.js">
 
@@ -22,13 +23,13 @@
     <meta name="robots" content="index, follow">
 
 </head>
-<body>
+<body class="kalnia-prim-font">
     <!-- HEADER -->
-    <header class="header">
+    <header class="header header-border">
         <!-- LOGO -->
         <div class="header-logo">
             <h1>
-                <a class="header-logo-link" href="/#home">MSR DESIGN</a>
+                <a class="header-logo-link kalnia-prim-font" href="/#home">MSR DESIGN</a>
             </h1>
         </div>
         <!-- LINKS -->
@@ -46,244 +47,13 @@
                 </li>
             </ul>
         </nav>
-        <!-- AVAILABILITY -->
-        <div>
-            <button class="header-info">
-                AVAILABLE FOR FREELANCE
-            </button>
-        </div>
     </header> 
 
     <!-- MAIN -->
-    <main class="main">
-        <div class="home-main">
-           
-            <!-- HERO -->
-            <div class="home-main-hero">
-                 <!-- HERO PAGINATION -->
-                <div class="home-main-hero-scroll">
-                    <p>
-                        <span>
-                            <span>01 // 04</span>
-                            <span>SCROLL</span>
-                            <span>
-                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M0 3l12 18 12-18h-24zm12 16.197l-10.132-15.197h20.263l-10.131 15.197"/></svg>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <!-- HERO INTRO -->
-                <div class="home-main-hero-intro">
-                    <p>
-                        <span>MSR</span>
-                        <span>DESIGN</span>
-                        <span>Maria Repolust</span>
-                    </p>
-                </div>
-                <!-- HERO SCROLL ELEMENT -->
-                <div class="home-main-hero-arrow">
-                    <span>
-                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 12c0-6.623-5.377-12-12-12s-12 5.377-12 12 5.377 12 12 12 12-5.377 12-12zm-1 0c0-6.071-4.929-11-11-11s-11 4.929-11 11 4.929 11 11 11 11-4.929 11-11zm-11.5 4.828l-3.763-4.608-.737.679 5 6.101 5-6.112-.753-.666-3.747 4.604v-11.826h-1v11.828z"/></svg>
-                    </span>
-                </div>
-            </div>
-
-            <!-- ABOUT -->
-            <div class="home-main-about">
-                <!-- ABOUT HEADER -->
-                    <div class="home-main-about-header">
-                        <!-- ABOUT PAGINATION -->
-                        <div class="home-main-about-scroll">
-                            <div>
-                                <span>
-                                    <span>02 // 04</span>
-                                    <span>SCROLL</span>
-                                    <span>
-                                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M0 3l12 18 12-18h-24zm12 16.197l-10.132-15.197h20.263l-10.131 15.197"/></svg>
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- ABOUT INTRO -->
-                        <div class="home-main-about-intro">
-                            <h3>
-                                <span>ABOUT</span>
-                            </h3>
-                        </div>
-                        <!-- ABOUT LINKS -->
-                        <div class="home-main-about-nav">
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="mailto:office@msr-design.com">
-                                            <span>EMAIL</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/msrdesigncom/" target="_blank">
-                                            <span>INSTAGRAM</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                
-
-                <!-- ABOUT CONTENT -->
-                <div class="home-main-about-image">
-
-                    <div class="home-main-about-image-description">
-                        <p>
-                            <span>
-                                <span>HI, ICH HEIßE MARIA. ICH DESIGNE</span>
-                            </span>
-                            <span>
-                                <span>& ENTWICKLE EINZIGARTIGE</span>
-                            </span>
-                            <span>
-                                <span>WEBSEITEN ALS FREELANCERIN.</span>
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="home-main-about-image-pic">
-                        <figure>
-                            <img src="#" alt="Picture of Maria Repolust - Owner of msr-design.com">
-                        </figure>
-                    </div>
-
-                    <div class="home-main-about-image-btn">
-                        <a href="/about">
-                            <span>
-                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 12c0-6.623-5.377-12-12-12s-12 5.377-12 12 5.377 12 12 12 12-5.377 12-12zm-1 0c0-6.071-4.929-11-11-11s-11 4.929-11 11 4.929 11 11 11 11-4.929 11-11zm-11.5 4.828l-3.763-4.608-.737.679 5 6.101 5-6.112-.753-.666-3.747 4.604v-11.826h-1v11.828z"/></svg>
-                            </span>
-                        </a>
-                    </div>
-
-                    <!-- ABOUT HORIZONTAL TITLE ANIM -->
-                    <div class="home-main-about-image-anim">
-                        <p>MARIA REPOLUST - MSR DESIGN</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- PROJECT -->
-            <div class="home-main-project">
-                <!-- PROJECT HEADER -->
-                <div class="home-main-project-header">
-                    <!-- PROJECT PAGINATION -->
-                    <div class="home-main-project-scroll">
-                        <div>
-                            <span>
-                                <span>03 // 04</span>
-                                <span>SCROLL</span>
-                                <span>
-                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M0 3l12 18 12-18h-24zm12 16.197l-10.132-15.197h20.263l-10.131 15.197"/></svg>
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- PROJECT INTRO -->
-                    <div class="home-main-project-intro">
-                       <div>
-                            <h3>
-                                <span>PROJECTS</span>
-                            </h3>
-                       </div>
-                    </div>
-                </div>
-
-                <!-- PROJECT CONTENT -->
-                <div class="home-main-project-portfolio">
-                    <!-- PROJECT PORTFOLIO INTRO -->
-                    <div class="home-main-project-portfolio-intro">
-                        <p>
-                            <span>
-                                <span>NEUGIERIG? HIER FINDEST</span>
-                            </span>
-                            <span>
-                                <span>DU EINIGE PROJEKTE VON MIR.</span>
-                            </span>
-                            <span>
-                                <span>SO KÖNNTE DEINE</span>
-                            </span>
-                            <span>
-                                <span>WEBSEITE AUCH AUSSEHEN.</span>
-                            </span>
-                        </p>
-                    </div>
-                    <!-- PROJECT PORTFOLIO CONTENT -->
-                    <div class="home-main-project-portfolio-content">
-                        <a href="#/project/">
-                            <figure>
-                                <img src="#" alt="Project X">
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="home-main-project-portfolio-content">
-                        <a href="#/project/">
-                            <figure>
-                                <img src="#" alt="Project Y">
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="home-main-project-portfolio-content">
-                        <a href="#/project/">
-                            <figure>
-                                <img src="#" alt="Project Z">
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- CONTACT -->
-            <div class="home-main-contact">
-                <!-- CONTACT PAGINATION -->
-                <div class="home-main-contact-scroll">
-                    <div>
-                        <span>
-                            <span>04 // 04</span>
-                        </span>
-                    </div>
-                </div>
-                <!-- CONTACT CONTENT -->
-               <div class="home-main-contact-content">
-                    <p>
-                        <span>HAVE SOME PROJECT IN MIND?</span>
-                    </p>
-                    <p>
-                        <span>LET'S CONNECT</span>
-                    </p>
-               </div>
-               <div class="home-main-contact-btn">
-                    <a href="mailto:office@msr-design.com">
-                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z"/></svg>
-                    </a>
-               </div>
-            </div>
-        </div>
-    </main>
+    
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="home-footer">
-            <div class="home-footer-content">
-                <div>
-                    <p>FEEL FREE TO CONNECT WITH ME.</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="mailto:office@msr-design.com">EMAIL</a>
-                            <a href="https://www.instagram.com/msrdesigncom/">INSTAGRAM</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </footer>
 </body>
 </html>
